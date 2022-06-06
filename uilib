@@ -1,13 +1,13 @@
 -- don't judge :rage:
 local function DestroyYep()
     for x = 1,69 do 
-        if game.CoreGui:FindFirstChild("fu8rj82n") then game.CoreGui:FindFirstChild("fu8rj82n"):Destroy() end
+        if game.CoreGui:FindFirstChild("xori") then game.CoreGui:FindFirstChild("xori"):Destroy() end
     end
 end
 
 DestroyYep()
 
-wait(0.069)
+wait(0.069420)
 
 local Library = {}
 
@@ -28,12 +28,12 @@ function Library:CreateWindow(windowname,windowinfo)
     local YepTitle = Instance.new("TextLabel")
     local YepCorner = Instance.new("UICorner")
 
-    fu8rj82n.Name = "fu8rj82n"
-    fu8rj82n.Parent = game.CoreGui
-    fu8rj82n.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    fu8rj82n.ResetOnSpawn = false
+    xori.Name = "xori"
+    xori.Parent = game.CoreGui
+    xori.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    xori.ResetOnSpawn = false
     
-    Frame.Parent = fu8rj82n
+    Frame.Parent = xori
     Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     Frame.BorderColor3 = Color3.fromRGB(20, 20, 20)
     Frame.BorderSizePixel = 0
@@ -43,7 +43,7 @@ function Library:CreateWindow(windowname,windowinfo)
     FrameCorner.Name = "FrameCorner"
     FrameCorner.Parent = Frame
     
-    DashBoard.Name = "DashBoard"
+    DashBoard.Name = "DashBoard"/
     DashBoard.Parent = Frame
     DashBoard.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
     DashBoard.BorderColor3 = Color3.fromRGB(15, 15, 15)
@@ -127,11 +127,11 @@ function Library:CreateWindow(windowname,windowinfo)
     YepTitle.Position = UDim2.new(1.57894742, 0, -0.318181813, 0)
     YepTitle.Size = UDim2.new(0, 128, 0, 33)
     YepTitle.Font = Enum.Font.GothamSemibold
-    YepTitle.Text = windowinfo or "UI Made by Bytes#0001"
+    YepTitle.Text = windowinfo
     YepTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
     YepTitle.TextSize = 9.000
     YepTitle.TextTransparency = 1.000
-    print("derek cool")
+    print("xori is cool :)")
     YepCorner.Name = "YepCorner"
     YepCorner.Parent = YepTitle
 
@@ -243,7 +243,6 @@ function Library:CreateWindow(windowname,windowinfo)
         Home.ScrollBarImageColor3 = Color3.fromRGB(5,5,5)
         Home.CanvasSize = UDim2.new(0,0,scrollsize,0) or UDim2.new(0,0,4,0)
         Home.Visible = visible or false
-        print("the um")
         PageLayout.Name = "PageLayout"
         PageLayout.Parent = Home
         PageLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
